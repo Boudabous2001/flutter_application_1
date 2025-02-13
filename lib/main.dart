@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'Boutique Flutter',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Colors.grey[100],
+        scaffoldBackgroundColor: const Color.fromARGB(255, 43, 43, 43),
       ),
       home: const HomeScreen(),
     );
