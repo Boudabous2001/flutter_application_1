@@ -25,6 +25,9 @@ class ProductCard extends StatelessWidget {
               product.imageUrl,
               width: double.infinity,
               fit: BoxFit.cover,
+              errorBuilder: (context, error, stackTrace) {
+                return const Center(child: Icon(Icons.error));
+              },
             ),
           ),
           Expanded(
@@ -48,7 +51,6 @@ class ProductCard extends StatelessWidget {
                   Text(
                     '${product.price.toStringAsFixed(2)} €',
                     style: const TextStyle(
-                      fontSize: 14,
                       color: Colors.blue,
                     ),
                   ),
